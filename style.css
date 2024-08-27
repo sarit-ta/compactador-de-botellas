@@ -19,9 +19,9 @@ body {
     background: rgba(0, 0, 0, 0.5);
     color: white;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     font-size: 18px;
-    border-bottom-left-radius: 10px;
+    border-bottom-left-radius: 5px;
     border-bottom-right-radius: 10px;
     transition: background 0.3s ease;
 }
