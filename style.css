@@ -14,6 +14,7 @@ body {
   .overlay {
     position: absolute;
     bottom: 0;
+    self-align: center;
     left: 2;
     right: 2;
     background: rgba(0, 0, 0, 0.5);
