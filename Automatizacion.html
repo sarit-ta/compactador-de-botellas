@@ -1,21 +1,235 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<font color="purple"> 
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <link rel="stylesheet" href="styl.css">
-    <title>Document</title>
-</head>
-<body bgcolor="#fae4ff">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Aquí se encuentra el título de la página que aparece en la pestaña-->
+<title>CSS3</title>
+<link rel="icon" href="Imagenes/logo.png" type="image/x-icon">
+<!--Aquí se declara estilo CSS INTERNO, entre las etiquetas style-->
+<style>
+  /* styles.css */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Azul claro */
+}
+
+.custom-header {
+    width: 100%;
     
+    background-color: #1e3a5f; /* Azul oscuro */
+    color: white;
+    padding: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-header .header-content {
+    display: flex;
+    align-items: center;
+}
+
+.custom-header .logo {
+    height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 20px;
+}
+
+.custom-header h1 {
+    margin: 0;
+    font-size: 24px; 
+    align-items: center;/* Ajusta el tamaño del texto según sea necesario */
+}
+header {
+    background-color: #1e3a5f; /* Azul oscuro */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #1e3a5f; /* Azul oscuro */
+    border-bottom: 2px solid #1e90ff; /* Azul cielo */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-left: 5px solid #1e3a5f; /* Azul oscuro */
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-image {
+    width: 70%;
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover .grid-image {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #1e3a5f; /* Azul oscuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+nav {
+    background-color: #1e3a5f; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+}
+li {
+    margin: 0 10px;
+}
+p {
+font-size: 18px;
+line-height: 1.6;
+}
+
+.box {
+background-color: #007bff;
+color: #fff;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.box:hover {
+background-color: #0056b3;
+}
+
+.box h2 {
+margin-top: 0;
+}
+
+.box p {
+margin-bottom: 0;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+.container {
+padding: 10px;
+}
+p {
+font-size: 16px;
+}
+}
+
+  
+  header {
+    background-color: #1e3a5f;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+</style>
+
+</head>
+
 <body>
-    <margin: 5em>
-   <center>
-    <header> <h1>AUTOMATIZACION</h1></header>
-    <main>
-Este proyecto se encuentra en la l nea de profundizaci n de automatizaci n ya que, seg n C rdoba Nieto (2006) define la automatizaci n como el manejo de informaci n en las empresas para la toma de decisiones en tiempo real,incorpora la inform tica y el control autom tico para la ejecuci n aut noma y de forma optima de procesos dise ados seg n criterios de ingenier a y en consonancia con los planes de direcci n empresarial (DPN, Colciencias. Plan Estrat gico del Programa Nacional de Desarrollo Tecnol gico Industrial y Calidad, 2000).<br><br>
+  <header class="custom-header">
+    <div class="header-content">
+        <a href="index.html"><img src="img/logo.png" alt="Logo de la página" class="logo"></a>
+        <h1>Diseño Web</h1>
+    </div>
+</header>
+<!--Aquí se encuentra el encabezado de la página entre las etiquetas header-->
+<header>
+  <h1>AUTOMATIZACION</h1>
+</header>
+
+
+<div class="container">
+  <p>Este proyecto se encuentra en la l nea de profundizaci n de automatizaci n ya que, seg n C rdoba Nieto (2006) define la automatizaci n como el manejo de informaci n en las empresas para la toma de decisiones en tiempo real,incorpora la inform tica y el control autom tico para la ejecuci n aut noma y de forma optima de procesos dise ados seg n criterios de ingenier a y en consonancia con los planes de direcci n empresarial (DPN, Colciencias. Plan Estrat gico del Programa Nacional de Desarrollo Tecnol gico Industrial y Calidad, 2000).<br><br>
 
  De igual manera tambien colocaron como concepto que hacia la automatizaci n esta corresponde a la necesidad de minimizar la intervenci n humana en los procesos de gobierno directo en la producci n, vale decir, ahorrar esfuerzo laboral (Gutierrez et al., 1994)  
 
@@ -24,7 +238,18 @@ Con las definiciones y conceptos anteriores obtenidos, se puede concluir que den
 Ademas, la automatizaci n ayuda a reducir los recursos utilizados con mayor eficacia, tambi n se puede garantizar la uniformidad al ser comprimidas las botellas pl sticas. De igual manera de esta forma se puede manejar la velocidad y la presi n, entre otras opciones que se pueden reflejar con esta linea de profundizaci n, haciendo el proceso aun mas seguro para la persona que este manejando o manipulando el prototipo.<br>
 
 En conclusi n, la automatizaci n es un elemento de gran importancia en el proyecto de compactaci n debido a sus beneficios en la consistencia, la eficiencia y la seguridad. Al aprovechar la tecnolog a para poder controlar y optimizar el proceso de compactaci n, con las cuales se pueden lograr distintos resultados superiores en t rminos de calidad y seguridad para aquel que tenga uso sobre el prototipo, lo que puede dejar como evidencia un impacto positivo generado por el proyecto y la automatizaci n que este conlleva. <br><br>
-    </main>
+    </main></p>
+  <ul>
+    
+<head>
+<font color="purple"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="styl.css">
+    <title>Document</title>
+</head>
+<body bgcolor="#D6EAF8">
+
        <section class="flex-container">
 <div class="flex-item">
     <a href="Problematica.html">
