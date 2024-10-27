@@ -2,6 +2,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Aquí se encuentra el título de la página que aparece en la pestaña-->
+<title>OBJETIVOS</title>
+<link rel="icon" href="Imagenes/logo.png" type="image/x-icon">
+<!--Aquí se declara estilo CSS INTERNO, entre las etiquetas style-->
+<style>
+  /* styles.css */
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #9FB8FA; /* Azul claro */
+}
+
+.custom-header {
+    width: 100%;
+    
+    background-color: #5DADE2; /* Azul */
+    color: white;
+    padding: 6px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.custom-header .header-content {
+    display: flex;
+    align-items: center;
+}
+
+.custom-header .logo {
+    height: 40px; /* Ajusta el tamaño del logo según sea necesario */
+    margin-right: 20px;
+}
+
+.custom-header h1 {
+    margin: 0;
+    font-size: 24px; 
+    align-items: center;/* Ajusta el tamaño del texto según sea necesario */
+}
+header {
+    background-color: #5DADE2; /* Azul  */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 40px 20px;
+    max-width: 900px;
+    margin: auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #5DADE2; /* Azul */
+    border-bottom: 2px solid #1e90ff; /* Azul cielo */
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+pre {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-left: 5px solid #1e3a5f; /* Azul oscuro */
+    overflow: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.grid-item {
+    position: relative;
+    overflow: hidden;
+}
+
+.grid-image {
+    width: 70%;
+    transition: transform 0.2s ease;
+}
+
+.grid-item:hover .grid-image {
+    transform: scale(0.95);
+}
+
+footer {
+    background-color: #1e3a5f; /* Azul oscuro */
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 6px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+nav {
+    background-color: #1e3a5f; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+   
+}
+li {
+    margin: 0 10px;
+}
+p {
+font-size: 18px;
+line-height: 1.6;
+}
+
+.box {
+background-color: #007bff;
+color: #fff;
+padding: 20px;
+margin-bottom: 20px;
+border-radius: 5px;
+box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+    
+.box:hover {
+background-color: #0056b3;
+}
+
+.box h2 {
+margin-top: 0;
+}
+
+.box p {
+margin-bottom: 0;
+}
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+button:hover {
+    background-color: #BDF0EC;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 600px) {
+.container {
+padding: 10px;
+}
+p {
+font-size: 16px;
+}
+}
+
+  
+  header {
+    background-color: #BDF0EC;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+
+</style>
+
+</head>
+
+<body>
+</header>
+<!--Aquí se encuentra el encabezado de la página entre las etiquetas header-->
+<header>
+  <h1>OBJETIVOS</h1>
+</header>
+
+
+<div class="container">
+  <p><main></main>La contaminacion es un problema que afecta al entorno de manera significativa. A nivel espec fico, se encuentra con diferentes formas de contaminaci n, como la contaminaci n del aire, el agua y el suelo. Estas formas tienen un impacto directo en la salud, en la biodiversidad y en los ecosistemas en general. Es fundamental entender las causas y consecuencias de la contaminaci n para poder tomar medidas efectivas y mitigar sus efectos negativos.<br>
+En este proyecto, se explorar  en detalle la soluci n m s factible, analizando sus causas e impactos. Se ha desarrollado una innovadora soluci n para el problema de la acumulaci n de botellas pl sticas en el medio ambiente. La caneca compactadora busca reducir el volumen de estos residuos, facilitando su almacenamiento y transporte. Adem s, este prototipo compromete la sostenibilidad, ya que la caneca cuenta con un tornillo Sinf n y placa de Arduino. Con esta soluci n, buscamos promover la cultura del reciclaje y contribuir a la preservaci n del sector Bosa Brasil.<br><br>       
+ </main></main></p>
+    
 <font color="#e35bc2"> 
 
     <meta charset="UTF-8">
@@ -9,24 +236,15 @@
     <title>Document</title>
         <link rel="stylesheet" href="style.css">
 </head>
-<body bgcolor="#ffd1f4">
+<body bgcolor="#BDF0EC">
 <center>
 <body>
-<margin: 5em>
     <header><center><h1>COMPACTADOR DE BOTELLAS</h1></center></header>
     <header><center><h3>INTRODUCCION</h3></center></header>
 <main>
-La contaminacion es un problema que afecta al entorno de manera significativa. A nivel espec fico, se encuentra con diferentes formas de contaminaci n, como la contaminaci n del aire, el agua y el suelo. Estas formas tienen un impacto directo en la salud, en la biodiversidad y en los ecosistemas en general. Es fundamental entender las causas y consecuencias de la contaminaci n para poder tomar medidas efectivas y mitigar sus efectos negativos.<br>
-En este proyecto, se explorar  en detalle la soluci n m s factible, analizando sus causas e impactos. Se ha desarrollado una innovadora soluci n para el problema de la acumulaci n de botellas pl sticas en el medio ambiente. La caneca compactadora busca reducir el volumen de estos residuos, facilitando su almacenamiento y transporte. Adem s, este prototipo compromete la sostenibilidad, ya que la caneca cuenta con un tornillo Sinf n y placa de Arduino. Con esta soluci n, buscamos promover la cultura del reciclaje y contribuir a la preservaci n del sector Bosa Brasil.<br><br>       
- </main>
+
 
 <section class="flex-container">
-<div class="flex-item">
-    <a href="Problematica.html">
-         <img src="https://www.shutterstock.com/image-vector/cute-robot-searching-magnifying-glass-600nw-2269751817.jpg" alt="banner logo html decorado" class="flex-image">
-          <div class="overlay">PROBLEMATICA</div>
-      </a>
-</div>
 
  <div class="flex-item">
        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd3A0snQDkFslqYH9EaZWhYH2TKNCACLj3lCGFgDDeZ_CpQTQ/viewform?usp=sf_link">
